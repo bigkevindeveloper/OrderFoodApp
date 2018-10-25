@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtTelefonoRegistro"
+            android:hint="Numero Telefono"
+            android:textColorHint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="980322"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="9"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtContraseñaRegistro"
+            android:hint="Contraseña"
+            android:textColorHint="@android:color/white"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="980322"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="9"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRegistrarse"
+            android:text="Registrarme"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            android:layout_margin="8dp"
+            app:fButtonColor="@color/btnSignActive"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
